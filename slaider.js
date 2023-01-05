@@ -1,8 +1,27 @@
 const interior = [
-  { img: "img/rostov-on-don-admiral.jpg" },
-  { img: "img/sochi-thieves.jpg" },
-  { img: "img/rostov-on-don-patriotic.jpg" },
+  {
+    city: "Rostov-on-Don <br/>  LCD admiral",
+    apartment: "81m2",
+    repairTime: "3.5 months",
+    RepairCost: "Upon request",
+    img: "img/rostov-on-don-admiral.jpg",
+  },
+  {
+    city: "Sochi <br/> Thieves",
+    apartment: "105m2",
+    repairTime: "4 months",
+    RepairCost: "Upon request",
+    img: "img/sochi-thieves.jpg",
+  },
+  {
+    city: "Rostov-on-Don <br/>  Patriotic",
+    apartment: "93m2",
+    repairTime: "3 months",
+    RepairCost: "Upon request",
+    img: "img/rostov-on-don-patriotic.jpg",
+  },
 ];
+
 const img = document.querySelector(".f");
 
 const setInterior = (index) => {
