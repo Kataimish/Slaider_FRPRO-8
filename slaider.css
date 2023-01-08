@@ -15,6 +15,7 @@ button {
 }
 .grid {
   display: grid;
+  gap: 10px;
   grid-template-columns: 1fr repeat(4, auto);
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
@@ -63,11 +64,11 @@ button {
 }
 .i {
   grid-area: i;
-  margin-right: 70px;
+  margin-right: 90px;
 }
 .k {
   grid-area: k;
-  margin-right: 70px;
+  margin-right: 90px;
 }
 .l {
   grid-area: l;
