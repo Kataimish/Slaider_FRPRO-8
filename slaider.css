@@ -3,10 +3,19 @@ body {
   max-width: 1200px;
   background: #131313;
   margin: 0 auto;
+  padding: 0 10px;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: 1fr repeat(4, auto);
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
     "a a b c d"
@@ -22,6 +31,8 @@ body {
   font-size: 14px;
   color: #ffffff4d;
   margin-bottom: 50px;
+  text-decoration: underline;
+  text-align: start;
 }
 .a {
   grid-area: a;
@@ -40,7 +51,7 @@ body {
 }
 .f {
   grid-area: f;
-  background-image: url("img/rostov-on-don-admiral.jpg");
+  background-image: url(img/rostov-on-don-admiral.jpg);
   width: 679px;
   height: 482px;
 }
@@ -52,11 +63,11 @@ body {
 }
 .i {
   grid-area: i;
-  margin-left: -70px;
+  margin-right: 70px;
 }
 .k {
   grid-area: k;
-  margin-left: -70px;
+  margin-right: 70px;
 }
 .l {
   grid-area: l;
@@ -85,7 +96,6 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 13px;
   color: #ffffff;
-  padding-right: 50px;
 }
 .switch {
   display: flex;
@@ -93,17 +103,17 @@ body {
   gap: 20px;
   align-items: flex-end;
 }
-.switch_round {
+.dot {
   z-index: 1;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #ffffff4d;
   margin-bottom: 5px;
 }
-.loc_admiral {
+.loc_active {
   color: #e3b873;
 }
-.admiral {
+.active {
   background-color: #ffffff;
 }

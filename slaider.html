@@ -11,15 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap"
       rel="stylesheet"
     />
-    <script src="slaider.js"></script>
     <title>SLAIDER</title>
   </head>
   <body>
     <div class="grid">
       <div class="a"></div>
-      <a class="location b loc_admiral" href="">ROSTOV-ON-DON, ADMIRAL</a>
-      <a class="location c loc_sochi" href="">SOCHI THIEVES</a>
-      <a class="location d loc_patriotic" href="">ROSTOV-ON-DON PATRIOTIC</a>
+      <button class="location b loc_active" href="">
+        ROSTOV-ON-DON, ADMIRAL
+      </button>
+      <button class="location c" href="">SOCHI THIEVES</button>
+      <button class="location d" href="">ROSTOV-ON-DON PATRIOTIC</button>
       <h1 class="projects e">
         COMPLETED
         PROJECTS&#160;&#160;&#160;&#160;&#160;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;
@@ -31,31 +32,36 @@
       </p>
       <div class="h">
         <h2 class="specTitle">CITY:</h2>
-        <p class="specValue">
+        <p class="specValue city">
           Rostov-on-Don <br />
           LCD admiral
         </p>
       </div>
       <div class="i">
         <h2 class="specTitle">APARTMENT AREA:</h2>
-        <p class="specValue">81m2</p>
+        <p class="specValue apartment">81m2</p>
       </div>
       <div class="j">
         <h2 class="specTitle">REPAIR TIME</h2>
-        <p class="specValue">3.5 months</p>
+        <p class="specValue repairTime">3.5 months</p>
       </div>
       <div class="k">
         <h2 class="specTitle">REPAIR COST</h2>
-        <p class="specValue">Upon request</p>
+        <p class="specValue RepairCost">Upon request</p>
       </div>
       <div class="switch l">
-        <a class="prev" href=""><img src="img/arrow_1.png" alt="prev" /></a>
-        <a href=""><div class="switch_round admiral"></div></a>
-        <a href=""><div class="switch_round sochi"></div></a>
-        <a href=""><div class="switch_round patriotic"></div></a>
-        <a class="next" href=""><img src="img/arrow_2.png" alt="next" /></a>
+        <button class="prevBtn">
+          <img src="img/arrow_1.png" alt="prev" />
+        </button>
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="nextBtn">
+          <img src="img/arrow_2.png" alt="next" />
+        </button>
       </div>
       <div class="f"></div>
     </div>
+    <script src="slaider.js"></script>
   </body>
 </html>
